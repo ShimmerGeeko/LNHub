@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
+import jsonData from "@/public/locales/en/common";
 
 // const Item = styled(Paper)(({ theme }) => ({
 //   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -20,6 +21,7 @@ import Box from '@mui/material/Box';
 // }));
 
 export default function Home() {
+  const t = jsonData;
   return (
     <main className={styles.main}>
       <div >
@@ -70,18 +72,10 @@ export default function Home() {
         <Grid item xs={6}>
           <p>
             <Typography variant="h5" >
-             {` The world is changing faster than ever and for good. 
-              With the ever increasing documentation requirements,
-              enhancements in regulatory mandates, updates in the legal procedures, 
-              amendments in laws, technological
-              upgrades, changes in the outlook of the judicial system, exponentially increased fraud landscape and
-              every-legal-thing around; it is becoming extremely challenging for businesses to keep up with the pace of the
-              change.
-             `}
+             {t.line1}
             </Typography>
             <Typography variant="h5">
-            Our goal at LNH is to be an aide to businesses and individuals seeking to fully focus on serving their authentic
-              customers while relying on us to help them stay competent and transcend in embracing the change.
+            {t.line2}
             </Typography>
           </p>
         </Grid>
