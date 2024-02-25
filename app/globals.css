@@ -18,12 +18,60 @@ body {
   overflow-x: hidden;
 }
 
+header{
+  padding: 0.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(229, 234, 242);
+  img{
+    height: auto;
+    width: auto;
+    object-fit: cover;
+  }
+  nav{
+    ul{
+      list-style-type: none;
+    display: flex;
+    gap: 1.5em;
+    font-size: 1.5rem;
+    color: #2884c5;
+    li{
+      .link{
+        /* color: red; */
+      }
+      .link:hover{
+        transition: width 2s;
+        color: #790c31;
+        font-weight: bold;
+        width: 100%;
+      }
+      .link-active{
+        color: #97a528;;
+        font-weight: 600;
+      }
+    }
+    }
+  }
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
   /* background: hsl(196.92deg 46.25% 49.61%); */
-  background: #ffffff;
-  color: #2b84c6;
+  /* background: #ffffff; */
+  /* color: #2b84c6; */
   /* color: #4498b9; */
+}
+
+main{
+  /* background-color: #2b84c6 !important; */
+  background: url("../public/assets/insurance-Broker-vs-Insurer.jpg");
+  /* color: #ffffff !important; */
+  min-height: 100vh;
+  padding: 4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: brightness(0.7); */
 }
 
 a {
@@ -31,8 +79,19 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+} */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #14131380;
+  color: white;
+  text-align: center;
+  padding: 5px;
 }

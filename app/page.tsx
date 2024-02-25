@@ -13,6 +13,7 @@ import Box from "@mui/material/Box";
 import Link from "next/link";
 import jsonData from "@/public/locales/en/common";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const t = jsonData;
@@ -34,7 +35,7 @@ export default function Home() {
                 <Typography variant="h5">{t.line2}</Typography>
               </p>
             </Grid>
-            <Grid item xs={6}>
+            {/* <Grid item xs={6}>
               <Image
                 height={380}
                 width={850}
@@ -44,10 +45,11 @@ export default function Home() {
                 }
                 alt={"logo"}
               />
-            </Grid>
+            </Grid> */}
           </Grid>
         </div>
       </main>
+     <Footer></Footer>
     </>
   );
 }
