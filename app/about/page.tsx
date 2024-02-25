@@ -23,7 +23,7 @@ export default function Home() {
           >
             {/* style={{boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)", padding: "6rem"}} */}
             <Grid item xs={6}>
-              <p className={styles.cardClass} >
+              <p className={"card-class"} >
                 <Typography variant="h6">{t.line1}</Typography>
                 <Typography variant="h6">{t.line2}</Typography>
               </p>

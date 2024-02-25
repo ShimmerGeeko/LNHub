@@ -30,7 +30,7 @@ export default function Home() {
             columnSpacing={{ xs: 3, sm: 4, md: 5 }}
           >
             <Grid item xs={6}>
-              <p>
+              <p className="card-class">
                 <Typography variant="h5">{t.line1}</Typography>
                 <Typography variant="h5">{t.line2}</Typography>
               </p>

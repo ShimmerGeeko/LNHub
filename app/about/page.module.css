@@ -28,10 +28,3 @@
   filter: brightness(0.7);
 }
 
-.cardClass{
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
-  padding: 6rem;
-  background: white;
-  border-radius: 10px;
-  opacity: 0.8;
-}
